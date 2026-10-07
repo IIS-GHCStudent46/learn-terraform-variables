@@ -126,3 +126,9 @@ module "ec2_instances" {
     environment = "development"
   }
 }
+
+module "s3-bucket-jl" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-jl/aws"
+  version = "1.0.0"
+  # insert required variables here
+}
